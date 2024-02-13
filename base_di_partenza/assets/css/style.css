@@ -16,6 +16,21 @@ hr {
   display: none;
 } /* rimuove l'elemento */
 
+#social-calendar-button{
+ position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.social-calendar-button a{
+}
+
+#page-up{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
+
 /* HEADER */
 header {
   background: rgb(0, 160, 198);
@@ -27,6 +42,9 @@ header {
   box-shadow: 0 3px 3px #444;
   margin-bottom: 1.5em;
   padding: 2em 1.5em;
+  position: sticky;
+  top: 0px;
+  z-index: 1030;
 }
 
 @media screen and (min-width: 800px) {
@@ -112,9 +130,15 @@ section h2 {
   font-weight: bold;
   background-color: #a3a3a3;
   padding: 0px 1em;
+  position: absolute;
+  bottom: 10rem;
 }
 
 /* ELEMENTI NEL MAIN - ARTICLE */
+
+.title-container{
+  position: relative;
+}
 
 h1 {
   font-size: 2.6rem;
@@ -122,6 +146,11 @@ h1 {
   font-weight: bold;
   letter-spacing: -0.03em;
   margin-bottom: 0.7em;
+}
+
+.title-container img{
+  position: absolute;
+ bottom: -20px;
 }
 
 p,
